@@ -11,7 +11,7 @@ import { NgFor } from '@angular/common';
 })
 export class TasksComponent {
   @Input({ required: true }) userId!: string
-  @Input({ required: true }) name?: string;
+  @Input({ required: true }) name!: string;
   tasks = [
     {
     id: 't1',
